@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Fuel Cost & Trip Calculator | Save Money on Travel</title>
+    <meta name="description" content="Free 2026 Fuel Calculator. Calculate your trip expenses, gas consumption, and travel costs for 2026. Fast and accurate travel tool.">
+    
+    <meta name="google-site-verification" content="434e69572ce15af6" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #f59e0b; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        header { background: #000; padding: 1rem; text-align: center; border-bottom: 2px solid var(--primary); }
+        .logo { font-weight: 900; font-size: 1.4rem; color: var(--primary); letter-spacing: 1px; }
+
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 320px; gap: 2rem; flex: 1; }
+        .main-tool { background: var(--card); border-radius: 20px; padding: 2rem; border: 1px solid #334155; }
+        
+        .ad-top { width: 100%; height: 90px; margin-bottom: 2rem; display: flex; justify-content: center; }
+
+        .input-group { margin-bottom: 1.2rem; }
+        label { display: block; font-size: 0.8rem; font-weight: 700; color: #94a3b8; margin-bottom: 0.5rem; text-transform: uppercase; }
+        input { width: 100%; padding: 14px; background: #0f172a; border: 2px solid #334155; border-radius: 12px; color: #fff; font-size: 1.1rem; outline: none; box-sizing: border-box; }
+        input:focus { border-color: var(--primary); }
+
+        .res-box { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 1.5rem; border-radius: 15px; text-align: center; margin-top: 1.5rem; border: 2px solid var(--primary); }
+        .res-val { font-size: 2.5rem; font-weight: 900; color: var(--primary); }
+
+        /* Visitas Dobles */
+        .internal-net { margin-top: 2rem; border-top: 1px solid #334155; padding-top: 1rem; }
+        .net-links { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 10px; }
+        .n-link { font-size: 0.75rem; color: #94a3b8; text-decoration: none; padding: 6px 12px; background: #0f172a; border-radius: 8px; }
+
+        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+        .cta-gas { background: var(--primary); color: #000; padding: 1.5rem; border-radius: 20px; text-align: center; text-decoration: none; display: block; }
+        .btn-gas { display: block; background: #000; color: #fff; padding: 12px; border-radius: 10px; font-weight: 800; margin-top: 1rem; text-decoration: none; text-transform: uppercase; }
+
+        @media (max-width: 800px) { .container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header><div class="logo">FUEL FLOW // 2026</div></header>
+
+<div class="container">
+    <main>
+        <div class="ad-top">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '318ba4e4eb97e5a697d43fb713f5456e',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/318ba4e4eb97e5a697d43fb713f5456e/invoke.js"></script>
+        </div>
+
+        <div class="main-tool">
+            <div class="input-group"><label>Distance (KM)</label><input type="number" id="dist" value="100" oninput="calc()"></div>
+            <div class="input-group"><label>Fuel Consumption (L/100km)</label><input type="number" id="cons" value="6.5" oninput="calc()"></div>
+            <div class="input-group"><label>Fuel Price (per Liter)</label><input type="number" id="price" value="1.85" oninput="calc()"></div>
+
+            <div class="res-box">
+                <div style="font-size: 0.8rem; font-weight: 800; opacity: 0.7;">TOTAL ESTIMATED COST:</div>
+                <div class="res-val" id="out">$12.03</div>
+                <p style="font-size: 0.7rem; margin-top: 5px;">(Based on 2026 Global Fuel Index)</p>
+            </div>
+
+            <div class="internal-net">
+                <div style="font-size: 0.7rem; font-weight: 700; color: #475569;">TRAVEL UTILITIES</div>
+                <div class="net-links">
+                    <a href="https://jsghomejsg.github.io/mis-apps-2026/grade-calculator/" class="n-link">Grade Predictor</a>
+                    <a href="https://jsghomejsg.github.io/mis-apps-2026/calorie-deficit-calculator/" class="n-link">Diet Calc</a>
+                    <a href="https://jsghomejsg.github.io/mis-apps-2026/business-name-generator/" class="n-link">Brand Gen</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <a href="https://www.effectivegatecpm.com/x0sa89dj?key=45fee6aa631e7dbbb3c820358e72eb4e" target="_blank" class="cta-gas">
+            <h4 style="margin:0; font-size: 1.1rem;">FUEL DISCOUNTS 2026</h4>
+            <p style="font-size: 0.8rem; margin: 10px 0;">Find the cheapest gas stations and get 20% discount vouchers.</p>
+            <span class="btn-gas">GET VOUCHERS</span>
+        </a>
+    </aside>
+</div>
+
+<script>
+    function calc() {
+        const d = parseFloat(document.getElementById('dist').value);
+        const c = parseFloat(document.getElementById('cons').value);
+        const p = parseFloat(document.getElementById('price').value);
+        if(d && c && p) {
+            const total = (d / 100) * c * p;
+            document.getElementById('out').innerText = "$" + total.toFixed(2);
+        }
+    }
+</script>
+</body>
+</html>
