@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Loan Calculator | Monthly Payment & Interest Estimator</title>
+    <meta name="description" content="Free 2026 Loan Calculator. Calculate monthly payments, total interest, and payoff dates. Professional financial tool for 2026 loans.">
+    
+    <meta name="google-site-verification" content="434e69572ce15af6" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #2563eb; --gold: #f59e0b; --bg: #f1f5f9; --card: #ffffff; --text: #0f172a; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        header { background: #0f172a; padding: 1.2rem; text-align: center; border-bottom: 4px solid var(--primary); }
+        .logo { font-weight: 800; font-size: 1.4rem; color: #fff; letter-spacing: -0.5px; }
+
+        .container { max-width: 1050px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 320px; gap: 2rem; flex: 1; }
+        .main-tool { background: var(--card); border-radius: 16px; padding: 2.5rem; border: 1px solid #e2e8f0; }
+        
+        .ad-banner { width: 100%; height: 90px; margin-bottom: 2rem; display: flex; justify-content: center; overflow: hidden; }
+
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+        label { display: block; font-size: 0.8rem; font-weight: 700; color: #64748b; margin-bottom: 0.5rem; text-transform: uppercase; }
+        input { width: 100%; padding: 12px; border: 2px solid #f1f5f9; border-radius: 8px; font-size: 1rem; outline: none; transition: 0.2s; box-sizing: border-box; }
+        input:focus { border-color: var(--primary); }
+
+        .result-box { background: #0f172a; color: #fff; padding: 1.5rem; border-radius: 12px; text-align: center; }
+        .res-val { font-size: 2.2rem; font-weight: 800; color: var(--gold); }
+
+        /* Visitas Dobles */
+        .network { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0; }
+        .n-links { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 10px; }
+        .n-link { font-size: 0.75rem; color: #64748b; text-decoration: none; padding: 6px 12px; border: 1px solid #e2e8f0; border-radius: 6px; }
+
+        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+        .cta-bank { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: #fff; padding: 1.8rem; border-radius: 16px; text-align: center; text-decoration: none; }
+        .btn-check { display: block; background: var(--gold); color: #000; padding: 14px; border-radius: 8px; font-weight: 800; margin-top: 1rem; text-decoration: none; }
+
+        @media (max-width: 800px) { .container { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header><div class="logo">FINANCE PRO 2026</div></header>
+
+<div class="container">
+    <main>
+        <div class="ad-banner">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '318ba4e4eb97e5a697d43fb713f5456e',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/318ba4e4eb97e5a697d43fb713f5456e/invoke.js"></script>
+        </div>
+
+        <div class="main-tool">
+            <div class="form-grid">
+                <div>
+                    <label>Loan Amount ($)</label>
+                    <input type="number" id="loan" value="50000" oninput="calcLoan()">
+                </div>
+                <div>
+                    <label>Interest Rate (%)</label>
+                    <input type="number" id="interest" value="5.5" step="0.1" oninput="calcLoan()">
+                </div>
+                <div>
+                    <label>Term (Months)</label>
+                    <input type="number" id="months" value="60" oninput="calcLoan()">
+                </div>
+            </div>
+
+            <div class="result-box">
+                <div style="font-size: 0.8rem; opacity: 0.7;">MONTHLY PAYMENT:</div>
+                <div class="res-val" id="monthlyOut">$955.05</div>
+            </div>
+
+            <div class="network">
+                <div style="font-size: 0.7rem; font-weight: 800; color: #94a3b8; text-transform: uppercase;">Essential Tools</div>
+                <div class="n-links">
+                    <a href="https://jsghomejsg.github.io/aplicaciones-incorrectas-2026/app21/" class="n-link">Inflation Tool</a>
+                    <a href="https://jsghomejsg.github.io/aplicaciones-incorrectas-2026/app22/" class="n-link">BMI Calculator</a>
+                    <a href="https://crypto-moon-2026.pages.dev/" class="n-link">Crypto Profits</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <a href="https://www.effectivegatecpm.com/x0sa89dj?key=45fee6aa631e7dbbb3c820358e72eb4e" target="_blank" class="cta-bank">
+            <h3 style="margin:0">LOW CREDIT SCORE?</h3>
+            <p style="font-size: 0.8rem; margin: 10px 0;">Check your 2026 loan eligibility and credit report instantly.</p>
+            <span class="btn-check">GET CREDIT REPORT</span>
+        </a>
+    </aside>
+</div>
+
+<script>
+    function calcLoan() {
+        const p = document.getElementById('loan').value;
+        const r = (document.getElementById('interest').value / 100) / 12;
+        const n = document.getElementById('months').value;
+        if(p && r && n) {
+            const x = Math.pow(1 + r, n);
+            const monthly = (p * x * r) / (x - 1);
+            document.getElementById('monthlyOut').innerText = "$" + monthly.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        }
+    }
+</script>
+</body>
+</html>
