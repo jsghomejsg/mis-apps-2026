@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Apps 2026 | Collection Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; margin: 0; padding: 2rem; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; max-width: 1000px; margin: 2rem auto; }
+        .card { background: white; padding: 1.5rem; border-radius: 15px; text-decoration: none; color: #0f172a; border: 1px solid #e2e8f0; font-weight: 700; transition: 0.3s; }
+        .card:hover { border-color: #6366f1; transform: translateY(-3px); }
+        #cookie-banner { position: fixed; bottom: 20px; left: 20px; right: 20px; background: #0f172a; color: white; padding: 20px; border-radius: 16px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 10000; font-size: 0.9rem; }
+        .cookie-btn { background: #6366f1; color: white; border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; font-weight: 800; }
+    </style>
+</head>
+<body>
+    <h1>Mis Apps 2026</h1>
+    <p>Collection of tools #21 to #27</p>
+
+    <div class="grid">
+        <a href="aplicacion21/" class="card">App 21</a>
+        <a href="aplicacion22/" class="card">App 22</a>
+        <a href="aplicacion23/" class="card">App 23</a>
+        <a href="generador-de-nombres-comerciales/" class="card">Business Name Gen</a>
+        <a href="calculadora-de-deficit-de-calorias/" class="card">Calorie Deficit</a>
+        <a href="calculadora-de-costos-de-combustible/" class="card">Fuel Cost Calc</a>
+        <a href="calculadora-de-calificaciones/" class="card">Grade Calculator</a>
+    </div>
+
+    <div id="cookie-banner">
+        <div>We use cookies to improve your experience. By using these tools, you agree to our <a href="privacy-policy.html" style="color: #6366f1;">Privacy Policy</a>.</div>
+        <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookies_accepted_repo_apps', 'true');
+        }
+        if (localStorage.getItem('cookies_accepted_repo_apps') === 'true') {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
